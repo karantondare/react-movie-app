@@ -20,6 +20,7 @@ export const StyledMovieInfo = styled.div`
     border-radius: 20px;
     position: relative;
   }
+
   .movieinfo-thumb {
     width: 300px;
     float: left;
@@ -76,6 +77,10 @@ export const StyledMovieInfo = styled.div`
   @media screen and (max-width: 768px) {
     min-height: 600px;
     height: auto;
+
+    .movieinfo-content {
+      display: flex;
+    }
   }
   @keyframes animateMovieinfo {
     from {

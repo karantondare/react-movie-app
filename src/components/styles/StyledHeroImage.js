@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const StyledHeroImage = styled.div`
   background: ${(props) =>
@@ -12,9 +12,24 @@ export const StyledHeroImage = styled.div`
   background-size: 100%, cover;
   background-position: center, center;
   width: 100%;
-  height: 600px;
+  height: 815px;
   position: relative;
   animation: animateHeroimage 1s;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    height: 500px;
+  }
+
+  @media screen and (max-width: 720px) {
+    width: 100%;
+    height: 400px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    height: 300px;
+  }
 
   .heroimage-content {
     max-width: 1280px;
@@ -39,6 +54,11 @@ export const StyledHeroImage = styled.div`
 
       @media screen and (max-width: 720px) {
         font-size: 38px;
+        color: #fff;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 20px;
         color: #fff;
       }
     }

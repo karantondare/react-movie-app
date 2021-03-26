@@ -4,14 +4,22 @@ import PropTypes from "prop-types";
 import { StyledHeroImage } from "../styles/StyledHeroImage";
 
 const HeroImage = ({ title, text, image }) => (
-  <StyledHeroImage image={image}>
-    <div className="heroimage-content">
-      <div className="heroimage-text">
-        <h1>{title}</h1>
-        <p>{text}</p>
+  <div
+    style={{
+      background: "var(--darkGrey)",
+      borderTop: "1px solid var(--medGrey)",
+      borderBottom: "1px solid var(--medGrey)",
+    }}
+  >
+    <StyledHeroImage image={image}>
+      <div className="heroimage-content">
+        <div className="heroimage-text">
+          <h1>{title}</h1>
+          <p>{text}</p>
+        </div>
       </div>
-    </div>
-  </StyledHeroImage>
+    </StyledHeroImage>
+  </div>
 );
 
 HeroImage.propTypes = {

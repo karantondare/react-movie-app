@@ -7,6 +7,7 @@ import Actor from "./elements/Actor";
 import Grid from "./elements/Grid";
 import Spinner from "./elements/Spinner";
 import { useMovieFetch } from "./hooks/useMovieFetch";
+import Footer from "./elements/Footer";
 
 const Movie = ({ movieId }) => {
   const [movie, loading, error] = useMovieFetch(movieId);
@@ -25,11 +26,12 @@ const Movie = ({ movieId }) => {
         revenue={movie.revenue}
       />
 
-      <Grid header="Actors">
-        {movie.actors.map((actor) => (
+      <Grid header="Main Cast">
+        {movie.actors.slice(0, 15).map((actor) => (
           <Actor key={actor.credit_id} actor={actor} />
         ))}
       </Grid>
+      <Footer />
     </>
   );
 };

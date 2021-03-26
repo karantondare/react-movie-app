@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const StyledHeader = styled.div`
   background: #1c1c1c;
@@ -8,7 +8,7 @@ export const StyledHeader = styled.div`
   .header-content {
     max-width: 1280px;
     min-height: 120px;
-    padding: 20px 0px;
+    padding: 5px 0px;
     margin: 0 auto;
     box-sizing: border-box;
 
@@ -20,23 +20,21 @@ export const StyledHeader = styled.div`
 `;
 
 export const StyledRMDBLogo = styled.img`
-  width: 250px;
-  margin-top: 20px;
+  width: 100px;
 
   @media screen and (max-width: 500px) {
-    width: 150px;
+    width: 60px;
     margin-top: 5px;
   }
 `;
 
 export const StyledTMDBLogo = styled.img`
   width: 122px;
-  margin-top: 25px;
+  margin: 20px 0;
   float: right;
 
   @media screen and (max-width: 500px) {
     display: inline-block;
     width: 80px;
-    margin-top: 0px;
   }
 `;

@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const StyledMovieThumb = styled.div`
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
     /* max-height: 350px; */
     transition: all 0.3s;
     object-fit: cover;
@@ -11,9 +11,7 @@ export const StyledMovieThumb = styled.div`
     :hover {
       opacity: 0.8;
     }
-    /* @media screen and (max-width: 1024px) {
-      height: 300px;
-    }
+    /*
     @media screen and (max-width: 768px) {
       height: 350px;
     }

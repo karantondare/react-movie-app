@@ -14,6 +14,7 @@ import LoadMoreBtn from "./elements/LoadMoreBtn";
 import Spinner from "./elements/Spinner";
 import { useHomeFetch } from "./hooks/useHomeFetch";
 import NoImage from "./images/no_image.jpg";
+import Footer from "./elements/Footer";
 
 const Home = () => {
   const [
@@ -77,6 +78,7 @@ const Home = () => {
       {currentPage < totalPages && !loading && (
         <LoadMoreBtn text="Load More" callback={loadMoreMovies} />
       )}
+      <Footer />
     </>
   );
 };

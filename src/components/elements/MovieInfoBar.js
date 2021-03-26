@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import { calcTime, convertMoney } from "../../helpers";
 import { StyledMovieInfoBar } from "../styles/StyledMovieInfoBar";
 
-const MovieInfoBar = ({ time, budget, revene }) => (
+const MovieInfoBar = ({ time, budget, revenue }) => (
   <StyledMovieInfoBar>
     <div className="movieinfobar-content">
       <div className="movieinfobar-content-col">
@@ -25,7 +25,7 @@ const MovieInfoBar = ({ time, budget, revene }) => (
       <div className="movieinfobar-content-col">
         <FontAwesome className="fa-revenue" name="ticket" size="2x" />
         <span className="movieinfobar-info">
-          Revenue: {convertMoney(revene)}
+          Revenue: {convertMoney(revenue)}
         </span>
       </div>
     </div>
