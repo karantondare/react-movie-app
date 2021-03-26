@@ -10,7 +10,6 @@ import {
 const SearchBar = ({ callback }) => {
   const [state, setState] = useState("");
   const timeOut = useRef(null);
-  console.log(state);
 
   const doSearch = (event) => {
     const { value } = event.target;
